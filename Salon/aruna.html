@@ -23,48 +23,39 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: url('images/bg.jpg') top center / contain no-repeat; /* Ensures the full image is visible */
     }
 
-    /* Background Image with Opacity */
-    .form-container {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .form-container::before {
-        content: "";
+    /* Overlay for Readability */
+    .overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('images/bg.jpg') center/cover no-repeat;
-        opacity: 0.3; /* Adjust for better readability */
-        z-index: -1;
+        background: rgba(0, 0, 0, 0.6);
     }
 
     /* Salon Menu */
     .menu {
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
         padding: 15px;
         border-radius: 12px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         width: 90%;
         max-width: 350px;
+        position: relative;
+        z-index: 2;
     }
 
     .menu h2 {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 12px;
         text-transform: uppercase;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
         padding-bottom: 8px;
+        text-align: center;
     }
 
     .menu ul {
@@ -74,12 +65,12 @@
     }
 
     .menu ul li {
-        font-size: 18px;
-        padding: 10px 0;
+        font-size: 16px;
+        padding: 8px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .menu ul li:last-child {
@@ -94,11 +85,11 @@
         }
         
         .menu h2 {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         .menu ul li {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
@@ -106,22 +97,22 @@
 
 <body>
 
-    <div class="form-container">
-        <div class="menu">
-            <h2>Salon Services</h2>
-            <ul>
-                <li>Haircut <span>₹150</span></li>
-                <li>Shaving <span>₹100</span></li>
-                <li>Beard Trim <span>₹120</span></li>
-                <li>Facial <span>₹500</span></li>
-                <li>Hair Spa <span>₹800</span></li>
-                <li>Hair Coloring <span>₹1200</span></li>
-                <li>Head Massage <span>₹300</span></li>
-                <li>Threading <span>₹80</span></li>
-                <li>Waxing <span>₹400</span></li>
-                <li>Manicure & Pedicure <span>₹600</span></li>
-            </ul>
-        </div>
+    <div class="overlay"></div>
+
+    <div class="menu">
+        <h2>Salon Services</h2>
+        <ul>
+            <li>Haircut <span>₹150</span></li>
+            <li>Shaving <span>₹100</span></li>
+            <li>Beard Trim <span>₹120</span></li>
+            <li>Facial <span>₹500</span></li>
+            <li>Hair Spa <span>₹800</span></li>
+            <li>Hair Coloring <span>₹1200</span></li>
+            <li>Head Massage <span>₹300</span></li>
+            <li>Threading <span>₹80</span></li>
+            <li>Waxing <span>₹400</span></li>
+            <li>Manicure & Pedicure <span>₹600</span></li>
+        </ul>
     </div>
 
 </body>
