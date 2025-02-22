@@ -42,6 +42,16 @@ header {
     margin-left: auto;
 }
 
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: yellow;
+}
+
 /* Sections */
 .menu, .combo, .facial {
     background: rgba(255, 255, 255, 0.8);
@@ -72,7 +82,6 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    animation: bounce 1s infinite alternate;
 }
 
 /* List Items */
@@ -98,13 +107,25 @@ li:hover {
     border-radius: 5px;
 }
 
+/* Animated Icons */
+.animated-icon {
+    display: inline-block;
+    animation: rotateIcon 1.5s infinite alternate ease-in-out;
+}
+
+/* Animation */
+@keyframes rotateIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(10deg); }
+}
+
 /* Mobile Styles */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .logo {
         width: 50px;
         margin-bottom: 5px;
@@ -114,22 +135,7 @@ li:hover {
         font-size: 20px;
     }
 
-    .contact {
-        font-size: 10px;
-    }
-
     .menu, .combo, .facial {
         width: 95%;
     }
-
-    li {
-        font-size: 14px;
-        padding: 8px;
-    }
-}
-
-/* Animation */
-@keyframes bounce {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(5px); }
 }
