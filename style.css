@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: linear-gradient(45deg, #ff6b6b, #ff4757);
     color: white;
     padding: 15px;
@@ -18,9 +18,7 @@ header {
 }
 
 .logo {
-    position: absolute;
-    left: 0px;
-    width: 86px; /* Adjust as needed */
+    width: 80px;
     height: auto;
 }
 
@@ -28,33 +26,62 @@ header {
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contact {
+    text-align: right;
+    font-size: 14px;
 }
 
 /* Menu Sections */
 .menu, .combo, .facial {
     background: white;
-    margin: 20px auto;
+    margin: 15px auto;
     padding: 15px;
     width: 90%;
     max-width: 500px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    background-color: #ffecec;
+}
+
+.combo {
+    background-color: #e6f7ff;
+}
+
+.facial {
+    background-color: #f9f0ff;
 }
 
 h2 {
     text-align: center;
     color: #ff4757;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
+/* Price Alignment */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 li {
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #ddd;
+}
+
+.price {
+    font-weight: bold;
+    color: #222;
 }
 
 /* Mobile Responsive */
@@ -64,7 +91,7 @@ li {
     }
 
     .logo {
-        width: 100px;
+        width: 70px;
     }
 
     .menu, .combo, .facial {
