@@ -187,13 +187,13 @@ li:hover {
     display: block;
     background: #4285F4;
     color: white;
-    padding: 10px 0px;
-    border-radius: 8px;
+    padding: 8px 15px; /* Reduced padding */
+    border-radius: 6px; /* Slightly smaller border radius */
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     font-weight: bold;
     text-align: center;
-    width: 40px;
+    width: 140px; /* Reduced width */
     margin: 0 auto;
     transition: background 0.3s ease-in-out;
 }
@@ -291,7 +291,10 @@ li:hover {
     }
 
     .google-btn {
-        width: 100%;
-        max-width: 250px;
+        /* width: 100%;
+        max-width: 250px; */
+        width: 120px; /* Even smaller width on very small screens */
+        font-size: 13px; /* Adjusted font size */
+        padding: 6px 12px; /* Reduced padding for mobile */
     }
 }
