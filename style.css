@@ -239,7 +239,7 @@ li:hover {
     text-align: center;
     transition: opacity 0.5s ease-in-out;
     z-index: 100;
-    animation: fadeOut 1.5s ease-in-out forwards;
+    animation: fadeOut 9.5s ease-in-out forwards;
 }
 
 .welcome-screen h2 {
