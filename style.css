@@ -1,7 +1,6 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* General Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
@@ -9,7 +8,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+
 header {
     display: flex;
     align-items: center;
@@ -52,7 +51,7 @@ header {
     color: yellow;
 }
 
-/* Sections */
+
 .menu, .combo, .facial {
     background: rgba(255, 255, 255, 0.8);
     margin: 20px auto;
@@ -64,17 +63,17 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Section Hover Effect */
+
 .menu:hover, .combo:hover, .facial:hover {
     transform: scale(1.02);
 }
 
-/* Background Colors */
+
 .menu { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
 .combo { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
 .facial { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
 
-/* Section Titles */
+
 h2 {
     text-align: center;
     color: #ff4757;
@@ -84,7 +83,7 @@ h2 {
     position: relative;
 }
 
-/* List Items */
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -101,25 +100,25 @@ li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Hover Effect */
+
 li:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-/* Animated Icons */
+
 .animated-icon {
     display: inline-block;
     animation: rotateIcon 1.5s infinite alternate ease-in-out;
 }
 
-/* Animation */
+
 @keyframes rotateIcon {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(10deg); }
 }
 
-/* Mobile Styles */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -139,6 +138,10 @@ li:hover {
         width: 95%;
     }
 }
+
+
+
+
 .google-rating {
     background: rgba(255, 255, 255, 0.9);
     text-align: center;
@@ -183,7 +186,7 @@ li:hover {
     background: #357ae8;
 }
 
-/* Mobile Styles */
+
 @media (max-width: 600px) {
     .google-rating {
         width: 95%;
