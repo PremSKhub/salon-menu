@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Menu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
-    <div class="welcome-screen">
+    <!-- <div class="welcome-screen">
         <img src="./images/welcome.jpg" alt="Welcome Image">
         <h2>Welcome to Aruna Salon</h2>
+    </div> -->
+
+    <div class="welcome-screen">
+        <img src="./images/welcome.jpg" alt="Welcome Image">
+        <div class="scissor">
+            <i class="fas fa-cut"></i>
+        </div>
+        <h2>Welcome to Aruna Salon</h2>
+        <div class="comb">
+            <i class="fas fa-comb"></i>
+        </div>
     </div>
 
-    
+
     <header>
         <img src="./images/background.jpg" alt="Salon Logo" class="logo">
         <h1 class="title"><i class="fas fa-scissors animated-icon"></i> Aruna Salon</h1>
@@ -42,8 +56,10 @@
             <h2><i class="fas fa-gift animated-icon"></i> Combo Services</h2>
             <ul>
                 <li><span><i class="fas fa-cut animated-icon"></i> Haircut, Shaving & Wash</span><span>₹230</span></li>
-                <li><span><i class="fas fa-user animated-icon"></i> Haircut, Shaving, Dye & Wash</span><span>₹330</span></li>
-                <li><span><i class="fas fa-paint-brush animated-icon"></i> Haircut, Shaving & Hair Coloring</span><span>₹250</span></li>
+                <li><span><i class="fas fa-user animated-icon"></i> Haircut, Shaving, Dye & Wash</span><span>₹330</span>
+                </li>
+                <li><span><i class="fas fa-paint-brush animated-icon"></i> Haircut, Shaving & Hair
+                        Coloring</span><span>₹250</span></li>
             </ul>
         </section>
 
@@ -62,14 +78,14 @@
         <section class="google-rating">
             <h2><i class="fas fa-star animated-icon"></i> Rate Us on Google</h2>
             <p>We’d love to hear your feedback! Click below to rate and review us on Google.</p>
-            <a href="https://www.google.com/maps/place/Aruna+Parlour/@10.3677016,77.9862566,17z/data=!4m18!1m9!3m8!1s0x3b00abaa88d22925:0xc50f78a85fdc6226!2sAruna+Parlour!8m2!3d10.3677016!4d77.9888315!9m1!1b1!16s%2Fg%2F11ry3bz1q0!3m7!1s0x3b00abaa88d22925:0xc50f78a85fdc6226!8m2!3d10.3677016!4d77.9888315!9m1!1b1!16s%2Fg%2F11ry3bz1q0?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="google-btn">
+            <a href="https://www.google.com/maps/place/Aruna+Parlour/@10.3677016,77.9862566,17z/data=!4m18!1m9!3m8!1s0x3b00abaa88d22925:0xc50f78a85fdc6226!2sAruna+Parlour!8m2!3d10.3677016!4d77.9888315!9m1!1b1!16s%2Fg%2F11ry3bz1q0!3m7!1s0x3b00abaa88d22925:0xc50f78a85fdc6226!8m2!3d10.3677016!4d77.9888315!9m1!1b1!16s%2Fg%2F11ry3bz1q0?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="google-btn">
                 <i class="fas fa-external-link-alt"></i> Rate Us
             </a>
         </section>
     </main>
 
     <script>
-        // Hide welcome screen after 2 seconds
         setTimeout(() => {
             document.querySelector('.welcome-screen').style.opacity = '0';
             setTimeout(() => {
@@ -79,4 +95,5 @@
     </script>
 
 </body>
+
 </html>
