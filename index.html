@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="welcome-screen">
+        <img src="./images/welcome.jpg" alt="Welcome Image">
+        <h2>Welcome to Aruna Salon</h2>
+    </div>
+
+    
     <header>
         <img src="./images/background.jpg" alt="Salon Logo" class="logo">
         <h1 class="title"><i class="fas fa-scissors animated-icon"></i> Aruna Salon</h1>
@@ -61,5 +67,16 @@
             </a>
         </section>
     </main>
+
+    <script>
+        // Hide welcome screen after 2 seconds
+        setTimeout(() => {
+            document.querySelector('.welcome-screen').style.opacity = '0';
+            setTimeout(() => {
+                document.querySelector('.welcome-screen').style.display = 'none';
+            }, 500);
+        }, 2000);
+    </script>
+
 </body>
 </html>
